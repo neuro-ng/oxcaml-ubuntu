@@ -7,7 +7,7 @@ WORKDIR /home/ocaml-user
 
 # Update opam and create OxCaml switch with ox repository
 RUN eval $(opam env --switch 5.2.0+ox) && \
-    opam install -y ocamlformat merlin ocaml-lsp-server utop
+    opam install -y ocamlformat merlin utop parallel
 
 # Set default working directory
 WORKDIR /workspace
