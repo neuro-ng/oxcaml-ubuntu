@@ -119,8 +119,8 @@ jobs:
 
 ```bash
 # Clone this repository
-git clone https://github.com/neuro-ng/oxcaml-switch-ubuntu.git
-cd oxcaml-switch-ubuntu
+git clone https://github.com/neuro-ng/oxcaml-ubuntu.git
+cd oxcaml-ubuntu
 
 # Build the Docker image
 docker build -t oxcaml-ubuntu .
