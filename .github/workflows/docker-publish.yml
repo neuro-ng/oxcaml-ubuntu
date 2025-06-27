@@ -1,4 +1,4 @@
-name: Build and Publish OxCaml Switch Docker Image
+name: Build and Publish OxCaml Ubuntu Docker Image
 
 on:
   push:
