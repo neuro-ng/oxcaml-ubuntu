@@ -7,7 +7,7 @@ WORKDIR /home/ocaml-user
 
 # Update opam and create OxCaml switch with ox repository
 RUN eval $(opam env --switch 5.2.0+ox) && \
-    opam install -y utop parallel core_unix && \\
+    opam install -y utop parallel core_unix && \
     opam clean
 
 # Set default working directory
