@@ -10,6 +10,10 @@ RUN eval $(opam env --switch 5.2.0+ox) && \
     opam install -y ocamlformat merlin ocaml-lsp-server utop parallel core_unix && \
     opam clean
 
+RUN eval $(opam env --switch 5.2.0+ox) && \
+    opam install -y alcotest cohttp-lwt-unix && \
+    opam clean
+
 # Set permissions for the workspace directory
 RUN chown -R ocaml-user:ocaml-user /workspace
 
