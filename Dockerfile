@@ -1,5 +1,5 @@
 # Use Ubuntu-based opam image as base
-FROM ghcr.io/neuro-ng/oxcaml-ubuntu:sha-b9ad8cf
+FROM ghcr.io/neuro-ng/oxcaml-ubuntu:latest
 
 # Switch to ocaml-user
 USER ocaml-user
