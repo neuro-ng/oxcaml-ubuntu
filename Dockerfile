@@ -1,5 +1,5 @@
 # Use Ubuntu-based opam image as base
-FROM ghcr.io/neuro-ng/oxcaml-ubuntu:sha-bf0b2d9
+FROM ghcr.io/neuro-ng/oxcaml-ubuntu:sha-b9ad8cf
 
 # Switch to ocaml-user
 USER ocaml-user
@@ -11,11 +11,8 @@ RUN eval $(opam env --switch 5.2.0+ox) && \
     opam clean
 
 RUN eval $(opam env --switch 5.2.0+ox) && \
-    opam install -y alcotest cohttp-lwt-unix && \
+    opam install -y alcotest cohttp-lwt-unix uri_parsing magic-mime && \
     opam clean
-
-# Set permissions for the workspace directory
-RUN chown -R ocaml-user:ocaml-user /workspace
 
 # Set default working directory
 WORKDIR /workspace
