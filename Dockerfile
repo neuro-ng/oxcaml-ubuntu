@@ -11,7 +11,7 @@ RUN eval $(opam env --switch 5.2.0+ox) && \
     opam clean
 
 RUN eval $(opam env --switch 5.2.0+ox) && \
-    opam install -y alcotest cohttp-lwt-unix uri_parsing magic-mime && \
+    opam install -y alcotest cohttp-lwt-unix uri_parsing magic-mime dune-lint && \
     opam clean
 
 # Set default working directory
