@@ -14,6 +14,10 @@ RUN eval $(opam env --switch 5.2.0+ox) && \
     opam install -y alcotest cohttp-lwt-unix uri_parsing magic-mime opam-dune-lint opium && \
     opam clean
 
+RUN eval $(opam env --switch 5.2.0+ox) && \
+    opam install -y jose mirage-crypto mirage-crypto-pk mirage-crypto-rng && \
+    opam clean
+
 # Set default working directory
 WORKDIR /workspace
 
