@@ -16,8 +16,7 @@ RUN eval $(opam env --switch 5.2.0+ox) && \
 
 RUN apt-get update && apt-get install -y \
     libgmp-dev \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get clean
 
 RUN eval $(opam env --switch 5.2.0+ox) && \
     opam install -y conf-gmp jose mirage-crypto mirage-crypto-pk mirage-crypto-rng && \
