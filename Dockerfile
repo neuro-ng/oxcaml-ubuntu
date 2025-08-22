@@ -15,7 +15,7 @@ RUN eval $(opam env --switch 5.2.0+ox) && \
     opam clean
 
 RUN eval $(opam env --switch 5.2.0+ox) && \
-    opam install -y jose mirage-crypto mirage-crypto-pk mirage-crypto-rng && \
+    opam install -y conf-gmp jose mirage-crypto mirage-crypto-pk mirage-crypto-rng && \
     opam clean
 
 # Set default working directory
