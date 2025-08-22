@@ -14,10 +14,13 @@ RUN eval $(opam env --switch 5.2.0+ox) && \
     opam install -y alcotest cohttp-lwt-unix uri_parsing magic-mime opam-dune-lint opium && \
     opam clean
 
+USER root
 RUN apt-get update && apt-get install -y \
     libgmp-dev \
-    && apt-get clean
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
+USER ocaml-user
 RUN eval $(opam env --switch 5.2.0+ox) && \
     opam install -y conf-gmp jose mirage-crypto mirage-crypto-pk mirage-crypto-rng && \
     opam clean
