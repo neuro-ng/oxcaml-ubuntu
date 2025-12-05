@@ -1,4 +1,6 @@
 # OxCaml Full DEV Image
+[![Build and Publish OxCaml Docker Image](https://github.com/neuro-ng/oxcaml-ubuntu/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/neuro-ng/oxcaml-ubuntu/actions/workflows/docker-publish.yml)
+[![Docker Image](https://ghcr-badge.egpl.dev/neuro-ng/oxcaml-ubuntu/latest_tag?trim=major&label=latest)](https://github.com/neuro-ng/oxcaml-ubuntu/pkgs/container/oxcaml-ubuntu)
 
 A comprehensive Docker image for OxCaml development with all essential tools pre-installed.
 
