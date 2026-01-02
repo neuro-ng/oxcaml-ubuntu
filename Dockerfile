@@ -25,6 +25,10 @@ RUN eval $(opam env --switch 5.2.0+ox) && \
     opam install -y conf-gmp jose mirage-crypto mirage-crypto-pk mirage-crypto-rng && \
     opam clean
 
+RUN eval $(opam env --switch 5.2.0+ox) && \
+    opam install -y cohttp-async base64 digestif && \
+    opam clean
+
 # Set default working directory
 WORKDIR /workspace
 
