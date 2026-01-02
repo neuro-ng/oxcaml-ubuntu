@@ -26,7 +26,7 @@ RUN eval $(opam env --switch 5.2.0+ox) && \
     opam clean
 
 RUN eval $(opam env --switch 5.2.0+ox) && \
-    opam install -y cohttp-async base64 digestif && \
+    opam install -y cohttp-async base64 digestif expect_test_helpers_async && \
     opam clean
 
 # Set default working directory
