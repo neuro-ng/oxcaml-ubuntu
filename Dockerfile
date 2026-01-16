@@ -6,7 +6,7 @@ USER ocaml-user
 WORKDIR /home/ocaml-user
 
 RUN eval $(opam env --switch 5.2.0+ox) && \
-    opam install -y cohttp-async base64 digestif expect_test_helpers_async && \
+    opam install -y cohttp-async && \
     opam clean
 
 # Set default working directory
