@@ -19,7 +19,7 @@ env:
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest
+    runs-on: image-builder
     permissions:
       contents: read
       packages: write
