@@ -6,7 +6,7 @@ USER ocaml-user
 WORKDIR /home/ocaml-user
 
 RUN eval $(opam env --switch 5.2.0+ox) && \
-    opam install -y  base64 digestif expect_test_helpers_async  && \
+    opam install -y  websocket-async  && \
     opam clean
 
 # Set default working directory
